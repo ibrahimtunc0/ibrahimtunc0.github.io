@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Courier+Prime&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body {
+    background: #f0ead8; /* var(--cream) */
+    color: #111;        /* var(--ink) */
+    font-family: 'Courier Prime', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+  }
+  body::before {
+    content:'';
+    position:fixed;
+    inset:0;
+    background-image: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.012) 2px,rgba(0,0,0,0.012) 4px);
+    pointer-events:none;
+  }
+  .portal {
+    text-align: center;
+    max-width: 500px;
+    border: 3px solid #111;
+    padding: 40px 20px;
+    background: #f0ead8;
+    box-shadow: 8px 8px 0px #e8001a; /* var(--red) */
+  }
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 13px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  .btn {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    background: #111;
+    color: #f0ead8;
+    padding: 12px 32px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    border: 2px solid #111;
+  }
+  .btn:hover {
+    background: #e8001a;
+    color: #f0ead8;
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0px #111;
+  }
+</style>
+</head>
+<body>
+
+<div class="portal">
+  <h1>Welcome</h1>
+  <p>Personal Repository & Conceptual Collections</p>
+  
+  <!-- This line connects the main page directly to your archive file -->
+  <a href="archive.html" class="btn">Film Archive</a>
+</div>
+
+</body>
+</html>
